@@ -1,0 +1,170 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #faf5f5, #3476e0);
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.container {
+  border: 2px solid white;
+  width: 80%;
+  min-width: 600px;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#newtask {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#taskinput {
+  width: 70%;
+  min-height: 45px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  border-radius: 5px;
+  resize: none;
+  overflow-y: hidden;
+  line-height: 1.4;
+}
+
+#newtask textarea:focus {
+  outline: none;
+  border-color: #8052ec;
+}
+
+#newtask button {
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #8052ec;
+  float: right;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#tasks {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+#img {
+  width: 20px;
+  height: 20px;
+}
+
+.task {
+  background-color: #ffffff;
+  min-height: 50px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.taskname {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  word-break: break-word;
+  white-space: pre-wrap;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.task button {
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 5px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.taskname.editing {
+  outline: 0px dashed #999;
+  background-color: #f9f9f9;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-width: 350px;
+    width: 90%;
+    padding: 20px 10px;
+  }
+  body {
+    align-items: center;
+    transform: translateY(-35px);
+  }
+  .heading {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #taskinput {
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    line-height: 1.1;
+  }
+  #newtask button {
+    width: 20%;
+    height: 35px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  #newtask
+  {
+    padding: 25px 15px;
+  }
+}
